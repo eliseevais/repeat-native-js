@@ -6,19 +6,20 @@ type AddressType = {
 }
 
 type HousesType = {
+  id?: number
   buildedAt: number
   repaired: boolean
   address: AddressType
 }
 
-type GovernmentBuildingsType = {
+export type GovernmentBuildingsType = {
   type: string
   budget: number
   staffCount: number
   address: AddressType
 }
 
-type CityTypeLocal = {
+export type CityTypeLocal = {
   title: string
   houses: HousesType[]
   governmentBuildings: GovernmentBuildingsType[]

@@ -5,7 +5,7 @@ type TechnologiesType = {
   title: string
 }
 
-type CityType = {
+export type CityType = {
   title: string
   country: string
 }

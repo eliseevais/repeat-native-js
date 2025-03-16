@@ -1,15 +1,22 @@
 import {addMoneyToBudget, createMessage, repairHouse, toFireStaff, toHireStaff} from "./03";
 
+type AddressType1 = {
+  street: {
+    title: string
+  }
+  number: number
+}
+
 export type HouseType1 = {
   buildedAt: number
   repaired: boolean
-  address: AddressType
+  address: AddressType1
 }
 
 export type CityTypeLocal1 = {
   title: string
   houses: HouseType1[]
-  governmentBuildings: GovernmentBuildingsType[]
+  governmentBuildings: GovernmentBuildingsType1[]
   citizenNumber: number
 }
 
@@ -17,7 +24,7 @@ export type GovernmentBuildingsType1 = {
   type: string
   budget: number
   staffCount: number
-  address: AddressType
+  address: AddressType1
 }
 
 let city1: CityTypeLocal1

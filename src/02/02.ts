@@ -10,7 +10,7 @@ export type CityType = {
   country: string
 }
 
-type AddressType = {
+export type AddressType = {
   street: string
   city: CityType
 }
